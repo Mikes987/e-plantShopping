@@ -8,7 +8,7 @@ function ProductList({ onHomeClick }) {
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
     const dispatch = useDispatch()
-    const cart = useSelector((state) => state.cart);
+    const cart = useSelector((state) => state.cart); // Alternative for Task 4. Instead of calculating total number, I calculate the length of array.
 
     const plantsArray = [
         {
